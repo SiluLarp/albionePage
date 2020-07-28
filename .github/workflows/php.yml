@@ -16,6 +16,9 @@ jobs:
 
     - name: Validate composer.json and composer.lock
       run: composer validate
+      
+    - name: PHP Runner
+      uses: franzliedke/gh-action-php@0.2.0
 
     - name: Cache Composer packages
       id: composer-cache
