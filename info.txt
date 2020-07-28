@@ -1,0 +1,37 @@
+la crear nuevas ciudades, el nombre de la imagen de la ciudad
+debe ser el mismo en la tabla de la base de datos
+registro nueva ciudad.
+guado nuevo icono con el mismo nombre
+
+lo mismo con la tabla categorias y sus iconos
+al agregar un nuevo registro debe haber un nueva imagen
+en el formato de las demas y el mismo nombre en la base de datos
+
+validar la mascara de un campo de textbox
+onblur="valida(this.value);
+function valida(valor){
+   //que no existan elementos sin escribir
+   if(valor.indexOf("_") == -1)
+   {
+      var hora = valor.split(":")[0];
+      if(parseInt(hora) > 23 )
+      {
+           $("#txtDuracion").val("");//el campo queda vacio sino cumple con lo necesario
+      }
+   }
+}
+
+BORRAR REGISTROS CON UNOS DIAS DE INTERMEDIO
+DELETE FROM registros WHERE fecha < CURRENT_DATE() - INTERVAL 7 DAY
+
+//codigo para mostrar y ocultar con 1 click
+/*var elemento = document.getElementById("msjDesplegable");//elemento que deseamos ocultar y mostrar
+if(!elemento) {
+return true;
+}
+if (elemento.style.display == "none") {
+elemento.style.display = "block"
+} else {
+elemento.style.display = "none"
+};
+return true;

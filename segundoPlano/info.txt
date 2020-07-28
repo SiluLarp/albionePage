@@ -1,0 +1,16 @@
+consultamsj.php
+se encarga de estar ejecutandose constantemente para buscar si hay nuevos mensajes.
+
+cargarmsj.php
+muestra una lista con los nuevos mensajes. 
+esto se muestra abajo del icono de mensaje. color azul
+
+listabuzon.php
+carga la lista de personas que han enviado mensaje al usuario sesion
+contiene el codigo para borrar un mensaje de la lista
+
+borrarMSJ.php
+borra el mensaje de la lista de buzon.
+
+limpiadorP.php
+elimina las publicaciones con mas de 2 dias de haberse creado
